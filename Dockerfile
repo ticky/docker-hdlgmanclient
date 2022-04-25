@@ -12,7 +12,7 @@ WORKDIR /tmp
 
 ADD https://archive.org/download/181208-hdlgman-client/%5B181208%5DHDLGameInstaller-0821-bin.zip /tmp/HDLGameInstaller.zip
 
-RUN 7zr x HDLGameInstaller.zip && \
+RUN 7z x HDLGameInstaller.zip && \
 	mkdir /app && \
 	mv PC/* /app && \
 	rm -rf /tmp/* && \
