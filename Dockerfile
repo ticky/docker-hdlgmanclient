@@ -26,6 +26,7 @@ ENV VNC_PASSWORD="HDLGManClient"
 
 WORKDIR /app
 EXPOSE 5900/tcp
+EXPOSE 45062/tcp
 VOLUME /data
 
 ADD docker-entrypoint.sh /bin
