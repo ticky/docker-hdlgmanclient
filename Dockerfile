@@ -13,11 +13,11 @@ WORKDIR /tmp
 ADD https://archive.org/download/181208-hdlgman-client/%5B181208%5DHDLGameInstaller-0821-bin.zip /tmp/HDLGameInstaller.zip
 
 RUN 7z x HDLGameInstaller.zip && \
-	mkdir /app && \
-	mv PC/* /app && \
-	rm -rf /tmp/* && \
-	winepath C:\\ && \
-	ln -s /data /root/.wine/dosdevices/d:
+    mkdir /app && \
+    mv \[*\]HDLGameInstaller*/PC/* /app && \
+    rm -rf /tmp/* && \
+    winepath C:\\ && \
+    ln -s /data /root/.wine/dosdevices/d:
 
 ENV DISPLAY=":0"
 ENV DESKTOP_SIZE="800x600"
