@@ -1,5 +1,7 @@
 # HDLGManClient in Docker
 
+[![Docker](https://github.com/ticky/docker-hdlgmanclient/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ticky/docker-hdlgmanclient/actions/workflows/docker-publish.yml)
+
 ## Running
 
 ```shell
