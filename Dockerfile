@@ -10,9 +10,9 @@ RUN apk add \
 
 WORKDIR /tmp
 
-ADD https://download2391.mediafire.com/x3g5bm02c4kg/sglo6cn71gfoht1/%5B181208%5DHDLGameInstaller-0821-bin.7z /tmp/HDLGameInstaller.7z
+ADD https://archive.org/download/181208-hdlgman-client/%5B181208%5DHDLGameInstaller-0821-bin.zip /tmp/HDLGameInstaller.zip
 
-RUN 7zr x HDLGameInstaller.7z && \
+RUN 7zr x HDLGameInstaller.zip && \
 	mkdir /app && \
 	mv PC/* /app && \
 	rm -rf /tmp/* && \
